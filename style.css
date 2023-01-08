@@ -14,24 +14,68 @@
 body {
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   font-size: 15px;
   font-family: "Inter", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  width: 375px;
+  width: 343px;
+  background-color: var(--off-white);
+  margin-top: 28px;
+  border: 1px solid magenta;
 }
 
-picture img {
-  width: 343px;
-  height: 300px;
+h1 {
+  margin: 0 0 16px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h2 {
+  color: var(--soft-orange);
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  color: var(--grey-blue);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-weight: 800;
+  line-height: 24px;
+}
+
+p {
+  font-weight: 400;
+  color: var(--dk-grey-blue);
+  line-height: 26px;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  width: 45px;
+  height: 28px;
 }
 
 .nav {
@@ -43,12 +87,12 @@ header {
   left: 100%;
   width: 256px;
   height: 669px;
-  transform: translateX(0);
+  transform: translateX(-100%);
   transition: transform 250ms;
 }
 
 .navigation-open {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 
 .nav-list {
@@ -83,7 +127,6 @@ header {
   border: 0;
   background: 0;
   cursor: pointer;
-  padding: 0.5em;
 }
 
 .close-nav {
@@ -94,6 +137,77 @@ header {
   position: absolute;
   top: 27px;
   right: 20px;
+}
+
+picture img {
+  width: 343px;
+  height: 300px;
+  order: 1;
+  margin-bottom: 24px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.article-content {
+  order: 2;
+}
+
+.article-content p {
+  padding-bottom: 24px;
+}
+
+.read-btn {
+  color: var(--off-white);
+  background-color: var(--soft-red);
+  padding: 13px 31px;
+  margin-bottom: 0;
+}
+
+.articles-section1 {
+  background-color: var(--dk-blue);
+  margin-bottom: 64px;
+  padding: 24px 20px;
+}
+
+.articles-section1 p {
+  color: var(--grey-blue);
+}
+
+.articles-section1 h4 {
+  color: var(--off-white);
+  font-size: 20px;
+}
+
+.articles-section2 img {
+  width: 100px;
+  height: 129px;
+}
+
+.article-section-2 {
+  display: flex;
+  height: 129px;
+  margin-bottom: 32px;
+}
+
+.article-section-2 h4 {
+  margin: 0;
+}
+
+.article-section-2 p {
+  margin: 0;
+}
+
+.article2-content {
+  padding-left: 24px;
 }
 
 @media (min-width: 800px) {
