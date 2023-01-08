@@ -15,15 +15,31 @@
   <body>
     <header>
       <img src="./assets/images/logo.svg" alt="logo" />
-      <nav>
-        <a href="">Home</a>
-        <a href="">New</a>
-        <a href="">Popular</a>
-        <a href="">Trending</a>
-        <a href="">Categories</a>
+      <img
+        src="./assets/images/icon-menu.svg"
+        alt="menu open"
+        class="open-nav"
+        aria-label="open navigation"
+      />
+
+      <nav class="nav navigation-open">
+        <img
+          class="close-nav"
+          aria-label="close navigation"
+          src="./assets/images/icon-menu-close.svg"
+          alt="menu close"
+        />
+
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">New</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Popular</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Trending</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Categories</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <article class="main-article">
         <div class="article-content">
           <h1>The Bright Future of Web 3.0?</h1>
