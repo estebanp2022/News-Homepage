@@ -99,6 +99,7 @@ header {
   top: 0;
   right: 0;
   width: 256px;
+  height: 100vh;
 }
 
 .navigation-open {
