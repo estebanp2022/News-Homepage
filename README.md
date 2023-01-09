@@ -14,7 +14,7 @@
 
 Users should be able to:
 
-- View the optimal layout for the interface depending on their device's screen size
+- View the optimal layout for the interface depending on their device's screen size. 375px for mobile and 1440 for desktop.
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
