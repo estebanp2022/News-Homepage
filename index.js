@@ -1,11 +1,14 @@
+const openButton = document.querySelector(".open-nav");
 const closeButton = document.querySelector(".close-nav");
 const nav = document.querySelector(".nav");
-const openButton = document.querySelector(".open-nav");
+const container = document.querySelector(".main-container");
 
 closeButton.addEventListener("click", () => {
-  nav.classList.toggle("navigation-open");
+  nav.classList.add("navigation-open");
+  // container.classList.remove("blur");
 });
 
 openButton.addEventListener("click", () => {
-  nav.classList.toggle("navigation-open");
+  nav.classList.remove("navigation-open");
+  // container.classList.add("blur");
 });
