@@ -1,14 +1,14 @@
 const openButton = document.querySelector(".open-nav");
 const closeButton = document.querySelector(".close-nav");
 const nav = document.querySelector(".nav");
-// const main = document.querySelector("main");
+const navContainer = document.querySelector(".nav-container");
 
 closeButton.addEventListener("click", () => {
   nav.classList.toggle("navigation-open");
-  // main.classList.remove("blur");
+  navContainer.classList.remove("show-nav");
 });
 
 openButton.addEventListener("click", () => {
   nav.classList.toggle("navigation-open");
-  // main.classList.add("blur");
+  navContainer.classList.add("show-nav");
 });

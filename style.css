@@ -78,6 +78,20 @@ header {
   height: 28px;
 }
 
+.nav-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.nav-container.show-nav {
+  display: block;
+}
+
 .nav {
   position: absolute;
   display: block;
@@ -258,6 +272,11 @@ picture img {
   .logo {
     width: 64px;
     height: 40px;
+  }
+
+  .nav-container {
+    display: block;
+    position: initial;
   }
 
   .nav {
