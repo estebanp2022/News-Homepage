@@ -1,14 +1,14 @@
 const openButton = document.querySelector(".open-nav");
 const closeButton = document.querySelector(".close-nav");
 const nav = document.querySelector(".nav");
-const container = document.querySelector(".main-container");
+// const main = document.querySelector("main");
 
 closeButton.addEventListener("click", () => {
-  nav.classList.add("navigation-open");
-  // container.classList.remove("blur");
+  nav.classList.toggle("navigation-open");
+  // main.classList.remove("blur");
 });
 
 openButton.addEventListener("click", () => {
-  nav.classList.remove("navigation-open");
-  // container.classList.add("blur");
+  nav.classList.toggle("navigation-open");
+  // main.classList.add("blur");
 });
